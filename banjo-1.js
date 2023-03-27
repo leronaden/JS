@@ -1,17 +1,12 @@
-/* Create a function which answers the question "Are you playing banjo?".
-If your name starts with the letter "R" or lower case "r", you are playing banjo!
+/* Build a function that returns an array of integers from n to 1 where n>0.
 
-The function takes a name as its only argument, and returns one of the following strings:
+Example : n=5 --> [5,4,3,2,1]*/
 
-name + " plays banjo" 
-name + " does not play banjo"*/
+   // Javascript program to print all numbers between 1 to N in reverse order
 
-
-
-function areYouPlayingBanjo(name) {
-    if (name[0].toLowerCase() === 'r') {
-      return name + ' plays banjo';
-    } else {
-      return name + ' does not play banjo';
-    }
-  }
+   const reverseSeq = n => {
+    let arr = [];
+      for (let i=n; i>0; i--) {
+        arr.push(i);
+        } return arr;
+    };

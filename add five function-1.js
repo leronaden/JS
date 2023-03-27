@@ -1,16 +1,17 @@
-//Create a function addFive without any arguments. This function adds 5 to the sum variable, but its returned value is undefined. 
+/* Write a program that finds the summation of every number from 1 to num. The number will always be a positive integer greater than 0.
 
+For example:
 
-let sum = 0;
+summation(2) -> 3
+1 + 2
 
-function addThree() {
-  sum = sum + 3;
+summation(8) -> 36
+1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 */
+
+var summation = function (num) {
+    let sum = 0
+    for(let i = 0; i <= num; i++) {
+        sum += i
+    }
+    return sum
 }
-
-
-function addFive() {
-    sum = sum + 5;
-  }
-
-addThree();
-addFive();

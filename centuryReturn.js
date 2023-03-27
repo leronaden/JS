@@ -1,15 +1,7 @@
-/*Introduction
-The first century spans from the year 1 up to and including the year 100, the second century - from the year 101 up to and including the year 200, etc.
+/*Your goal in this kata is to implement a difference function, which subtracts one list from another and returns the result.
 
-Task
-Given a year, return the century it is in.*/
+It should remove all values from list a, which are present in list b keeping their order.*/
 
-function century(year) {
-    let centuryCount = 0;
-    while (year > 0){
-      year = year - 100;
-      centuryCount = centuryCount + 1;
-    }
-    return centuryCount;
-   
+function array_diff(a, b) {
+    return a.filter(e => !b.includes(e));
   }

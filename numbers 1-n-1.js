@@ -1,12 +1,15 @@
-/* Build a function that returns an array of integers from n to 1 where n>0.
+/*Introduction
+The first century spans from the year 1 up to and including the year 100, the second century - from the year 101 up to and including the year 200, etc.
 
-Example : n=5 --> [5,4,3,2,1]*/
+Task
+Given a year, return the century it is in.*/
 
-   // Javascript program to print all numbers between 1 to N in reverse order
-
-   const reverseSeq = n => {
-    let arr = [];
-      for (let i=n; i>0; i--) {
-        arr.push(i);
-        } return arr;
-    };
+function century(year) {
+    let centuryCount = 0;
+    while (year > 0){
+      year = year - 100;
+      centuryCount = centuryCount + 1;
+    }
+    return centuryCount;
+   
+  }

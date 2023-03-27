@@ -1,10 +1,17 @@
-/* We need a function that can transform a number (integer) into a string.
+/* Create a function which answers the question "Are you playing banjo?".
+If your name starts with the letter "R" or lower case "r", you are playing banjo!
 
-To convert an integer to a string, use the str() built-in function. The function takes an integer (or other type) as its input and produces a string as its output.*/
+The function takes a name as its only argument, and returns one of the following strings:
+
+name + " plays banjo" 
+name + " does not play banjo"*/
 
 
 
-function numberToString(num) {
-    return String(num)
-    // Return a string of the number here!
+function areYouPlayingBanjo(name) {
+    if (name[0].toLowerCase() === 'r') {
+      return name + ' plays banjo';
+    } else {
+      return name + ' does not play banjo';
+    }
   }
